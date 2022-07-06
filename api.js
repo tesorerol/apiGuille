@@ -35,11 +35,11 @@ app.use(cors(corsOptions))
 server.listen(PORT, () => console.log('server On ' + PORT));
 
 mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`, { useNewUrlParser: true, useUnifiedTopology: true }).then((db) => console.log("conectado")).catch((e) => console.log(e));
-// getUpdateRows();
-// setInterval(() => {
-//     getUpdateRows();
-//     console.log("Update")
-// }, TIME_INTERVAL);
+
+setInterval(async () => {
+    await getUpdateRows();
+    console.log("Update")
+}, TIME_INTERVAL);
 
 app.get("/", (req, res) => {
     res.send("GG")
@@ -48,14 +48,12 @@ app.get("/", (req, res) => {
 app.get("/getMatches", async function (req, res) {
     const { sports, date, tournament } = req.query;
     let resp = [];
-    console.log(sports)
     if (sports) {
         let results = [];
         await Promise.all(sports.split(",").map(async (id) => {
             var filter = {
                 sportId: id,
             };
-            console.log(id)
             await AllData().then(r => {
                 let filtro = r.filter(function (item) {
                     for (var key in filter) {
@@ -66,7 +64,6 @@ app.get("/getMatches", async function (req, res) {
                 });
                 return results = results.concat(filtro);
             })
-            console.log("filter")
         }))
         resp = resp.concat(results)
     }
