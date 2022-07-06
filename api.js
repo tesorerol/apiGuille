@@ -8,7 +8,7 @@ const app = express();
 var fs = require('fs');
 const https = require("https");
 const cors = require("cors");
-const PORT=3003;
+const PORT = 3003;
 var options = {
     key: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/privkey.pem'),
     cert: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/cert.pem'),
@@ -38,6 +38,10 @@ setInterval(() => {
     getUpdateRows();
     console.log("Update")
 }, TIME_INTERVAL);
+
+app.get("/", (req,res) => {
+    res.send("GG")
+})
 
 app.get("/getMatches", async function (req, res) {
     const { sports, date, tournament } = req.query;
