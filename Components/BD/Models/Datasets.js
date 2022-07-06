@@ -9,7 +9,8 @@ const DatasetSchema = new Schema({
     location: { type: String, trim: true, required: true },
     home: { type: String, trim: true, required: true },
     away: { type: String, trim: true, required: true },
-    startTime: { type: String, trim: true, required: true }
+    startTime: { type: String, trim: true, required: true },
+    timeEST: { type: String, trim: true, required: true }
 });
 
 module.exports = model("Datasets", DatasetSchema)
