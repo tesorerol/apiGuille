@@ -35,6 +35,7 @@ server.listen(PORT, () => console.log('server On ' + PORT));
 mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`, { useNewUrlParser: true, useUnifiedTopology: true }).then((db) => console.log("conectado")).catch((e) => console.log(e));
 
 getUpdateRows();
+
 // setInterval(() => {
 //     getUpdateRows();
 //     console.log("Update")
