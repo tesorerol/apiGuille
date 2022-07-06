@@ -7,7 +7,7 @@ const { AllData } = require("./Components/BD/Cruds/Datasets");
 const app = express();
 var fs = require('fs');
 const https = require("https");
-
+const cors = require("cors");
 var options = {
     key: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/privkey.pem'),
     cert: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/cert.pem'),
