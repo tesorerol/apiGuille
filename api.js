@@ -12,6 +12,7 @@ var options = {
     key: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/privkey.pem'),
     cert: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/cert.pem'),
 };
+
 const server = https.createServer(options, app);
 /**** Descomenta si quieres ambiente de produccion******/
 
@@ -26,8 +27,8 @@ const corsOptions = {
     },
     credentials: true,
 }
+app.use(cors(corsOptions))
 
-server.use(cors(corsOptions))
 server.listen(PORT, () => console.log('server On ' + PORT));
 
 mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`, { useNewUrlParser: true, useUnifiedTopology: true }).then((db) => console.log("conectado")).catch((e) => console.log(e));
