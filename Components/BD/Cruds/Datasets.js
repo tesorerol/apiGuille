@@ -13,7 +13,8 @@ exports.AllData = async function (datos) {
                 location: 1,
                 home: 1,
                 away: 1,
-                startTime: 1
+                startTime: 1,
+                _id:0,
             }
         }]);
     return result;
