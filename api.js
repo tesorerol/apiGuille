@@ -8,6 +8,7 @@ const app = express();
 var fs = require('fs');
 const https = require("https");
 const cors = require("cors");
+const PORT=3003;
 var options = {
     key: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/privkey.pem'),
     cert: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/cert.pem'),
