@@ -30,20 +30,16 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-
-
 server.listen(PORT, () => console.log('server On ' + PORT));
 
 mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`, { useNewUrlParser: true, useUnifiedTopology: true }).then((db) => console.log("conectado")).catch((e) => console.log(e));
-
 // getUpdateRows();
-
 setInterval(() => {
     getUpdateRows();
     console.log("Update")
 }, TIME_INTERVAL);
 
-app.get("/", (req, res) => {
+app.get("/", (req,res) => {
     res.send("GG")
 })
 
@@ -73,8 +69,6 @@ app.get("/getMatches", async function (req, res) {
     if (date) {
         if (resp.length > 0) {
             const regex = new RegExp(`/${date}\\b`);
-            // const matchedSites = resp.filter((r) => regex.test(r.startTime));
-            // console.log(matchedSites)
             const fitered = resp.filter((item) => {
                 return item.startTime.split(' ').some((part) => part.includes(date));
             });
