@@ -14,6 +14,7 @@ exports.AllData = async function (datos) {
                 home: 1,
                 away: 1,
                 startTime: 1,
+                timeEST:1,
                 _id:0,
             }
         }]);
