@@ -39,7 +39,7 @@ setInterval(() => {
     console.log("Update")
 }, TIME_INTERVAL);
 
-app.get("/test", async function (req, res) {
+app.get("/getMatches", async function (req, res) {
     const { sports, date, tournament } = req.query;
     let resp = [];
     if (sports) {
