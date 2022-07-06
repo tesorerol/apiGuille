@@ -5,10 +5,33 @@ const express = require("express");
 const { getUpdateRows } = require("./Components/Helpers");
 const { AllData } = require("./Components/BD/Cruds/Datasets");
 const app = express();
-app.get("/");
-app.listen(3003, () => console.log("Server Ready"));
+var fs = require('fs');
+const https = require("https");
+
+var options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/cert.pem'),
+};
+const server = https.createServer(options, app);
+/**** Descomenta si quieres ambiente de produccion******/
+
+const whitelist = ["*"]
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (!origin || whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error("Not allowed by CORS"))
+        }
+    },
+    credentials: true,
+}
+
+server.use(cors(corsOptions))
+server.listen(PORT, () => console.log('server On ' + PORT));
 
 mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`, { useNewUrlParser: true, useUnifiedTopology: true }).then((db) => console.log("conectado")).catch((e) => console.log(e));
+
 setInterval(() => {
     getUpdateRows();
     console.log("Update")
