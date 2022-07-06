@@ -2,7 +2,20 @@ const Datasets = require("../Models/Datasets");
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 exports.AllData = async function (datos) {
-    let result = await Datasets.find(datos);
+    let result = await Datasets.aggregate([
+        {
+            $project: {
+                id: 1,
+                idAsString: 1,
+                sportId: 1,
+                sport: 1,
+                tournament: 1,
+                location: 1,
+                home: 1,
+                away: 1,
+                startTime: 1
+            }
+        }]);
     return result;
 }
 

@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const DatasetSchema = new Schema({
-    id: { type: String, trim: true, required: true },
+    id: { type: Number, trim: true, required: true },
     idAsString: { type: String, trim: true, required: true },
     sportId: { type: Number, trim: true, required: true },
     sport: { type: String, trim: true, required: true },
