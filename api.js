@@ -46,6 +46,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/getMatches", async function (req, res) {
+    console.log("peticion " + new Date())
     const { sports, date, tournament } = req.query;
     let resp = [];
     if (sports) {
