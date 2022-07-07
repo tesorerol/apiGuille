@@ -50,21 +50,22 @@ app.get("/getMatches", async function (req, res) {
     let resp = [];
     if (sports) {
         let results = [];
-        await Promise.all(sports.split(",").map(async (id) => {
-            var filter = {
-                sportId: id,
-            };
-            await AllData().then(r => {
+        await AllData().then(async r => {
+            await Promise.all(sports.split(",").map(async (id) => {
+                var filter = {
+                    sportId: id,
+                };
+
                 let filtro = r.filter(function (item) {
                     for (var key in filter) {
                         if (item[key] === undefined || item[key] != filter[key])
                             return false;
                     }
                     return true;
-                });
+                })
                 return results = results.concat(filtro);
-            })
-        }))
+            }))
+        });
         resp = resp.concat(results)
     }
 
