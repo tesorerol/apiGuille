@@ -36,10 +36,10 @@ server.listen(PORT, () => console.log('server On ' + PORT));
 
 mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DB}`, { useNewUrlParser: true, useUnifiedTopology: true }).then((db) => console.log("conectado")).catch((e) => console.log(e));
 
-setInterval(async () => {
-    await getUpdateRows();
-    console.log("Update")
-}, TIME_INTERVAL);
+// setInterval(async () => {
+//     await getUpdateRows();
+//     console.log("Update")
+// }, TIME_INTERVAL);
 
 app.get("/", (req, res) => {
     res.send("GG")
