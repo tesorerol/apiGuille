@@ -13,7 +13,7 @@ function FormatFecha(fecha) {
 exports.getUpdateRows = async function () {
     await axios.get('https://om-fixtures.oddsmatrix.com/matches')
         .then(async response => {
-            await Promise.all(
+            new Promise((resolve, reject) => {
                 response.data.map(async (r) => {
                     // console.log(r)
                     let exist = await AllData({ idAsString: r.idAsString });
@@ -22,7 +22,10 @@ exports.getUpdateRows = async function () {
                     } else {
                         await AddData({ ...r, timeEST: FormatFecha(r.startTime) });
                     }
-                }));
+                })
+                console.log("listo")
+                resolve(true);
+            });
         }).catch(async r => {
             console.log("error")
             console.log(r)
