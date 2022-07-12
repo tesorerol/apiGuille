@@ -1,0 +1,602 @@
+[
+    {
+        "Id": "1",
+        "Name": "Football",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "2",
+        "Name": "Golf",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "3",
+        "Name": "Tennis",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "5",
+        "Name": "Am. Football",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "6",
+        "Name": "Ice Hockey",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "7",
+        "Name": "Handball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "8",
+        "Name": "Basketball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "9",
+        "Name": "Baseball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "10",
+        "Name": "Field Hockey",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "11",
+        "Name": "Softball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "12",
+        "Name": "Weightlifting",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "13",
+        "Name": "Athletics",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "14",
+        "Name": "Badminton",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "15",
+        "Name": "Gymnastics",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "16",
+        "Name": "Rowing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "17",
+        "Name": "Sailing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "18",
+        "Name": "Swimming",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "19",
+        "Name": "Triathlon",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "20",
+        "Name": "Volleyball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "22",
+        "Name": "Water Polo",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "23",
+        "Name": "Motor Racing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "24",
+        "Name": "Horse Racing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "25",
+        "Name": "Fighting",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "26",
+        "Name": "Cricket",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "27",
+        "Name": "Greyhounds",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "28",
+        "Name": "Rugby League",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "34",
+        "Name": "Specials",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "36",
+        "Name": "Snooker",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "37",
+        "Name": "Cycling",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "38",
+        "Name": "AFL",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "39",
+        "Name": "Rugby Union",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "40",
+        "Name": "Bandy",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "41",
+        "Name": "Floorball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "45",
+        "Name": "Darts",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "46",
+        "Name": "Hurling",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "47",
+        "Name": "Gaelic Football",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "48",
+        "Name": "Pool",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "49",
+        "Name": "Futsal",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "50",
+        "Name": "Surfing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "51",
+        "Name": "Poker",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "52",
+        "Name": "Chess",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "53",
+        "Name": "Alpine Skiing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "54",
+        "Name": "Cross Country Skiing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "55",
+        "Name": "Freestyle Skiing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "56",
+        "Name": "Nordic Combined",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "57",
+        "Name": "Ski Jumping",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "58",
+        "Name": "Snowboard",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "59",
+        "Name": "Biathlon",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "60",
+        "Name": "Curling",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "61",
+        "Name": "Bobsleigh",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "62",
+        "Name": "Lacrosse",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "63",
+        "Name": "Table Tennis",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "64",
+        "Name": "Beach Volleyball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "65",
+        "Name": "Canoeing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "66",
+        "Name": "Beach Football",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "67",
+        "Name": "Bowls",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "68",
+        "Name": "Luge",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "69",
+        "Name": "Figure Skating",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "70",
+        "Name": "Skeleton",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "71",
+        "Name": "Speed Skating",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "72",
+        "Name": "Short Track Speed Skating",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "73",
+        "Name": "Netball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "74",
+        "Name": "Harness Racing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "75",
+        "Name": "Fencing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "76",
+        "Name": "Squash",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "77",
+        "Name": "Horseball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "78",
+        "Name": "Judo",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "79",
+        "Name": "Petanque",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "80",
+        "Name": "Basque Pelota",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "81",
+        "Name": "Diving",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "82",
+        "Name": "Equestrian Sports",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "83",
+        "Name": "Taekwondo",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "84",
+        "Name": "Sepak takraw",
+        "Description": "Sepak takraw or kick volleyball, is a sport native to the Malay-Thai Peninsula. Sepak takraw differs from the similar sport of volleyball in its use of a rattan ball and only allowing players to use their feet, knee, chest and head to touch the ball.",
+        "Parent": "Sepak takraw or kick volleyball, is a sport native to the Malay-Thai Peninsula. Sepak takraw differs from the similar sport of volleyball in its use of a rattan ball and only allowing players to use their feet, knee, chest and head to touch the ball."
+    },
+    {
+        "Id": "85",
+        "Name": "Archery",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "86",
+        "Name": "Virtual Football",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "87",
+        "Name": "Virtual Horse Racing",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "88",
+        "Name": "Virtual Greyhounds",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "89",
+        "Name": "Pesapallo",
+        "Description": "Pesapallo is a fast-moving bat-and-ball sport that is quite often referred to as the national sport of Finland and has some presence in other countries. The game is similar to brÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤nnboll, rounders, baseball and lapta.",
+        "Parent": "Pesapallo is a fast-moving bat-and-ball sport that is quite often referred to as the national sport of Finland and has some presence in other countries. The game is similar to brÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤nnboll, rounders, baseball and lapta."
+    },
+    {
+        "Id": "90",
+        "Name": "E-Sports",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "91",
+        "Name": "Virtual Tennis",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "92",
+        "Name": "Virtual Basketball",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "93",
+        "Name": "Fantasy Duels",
+        "Description": "Fantasy match requests by OM operators.",
+        "Parent": "Fantasy match requests by OM operators."
+    },
+    {
+        "Id": "96",
+        "Name": "Electronic Sports",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "98",
+        "Name": "CS:GO",
+        "Description": "Counter Strike: Global Offensive",
+        "Parent": "Counter Strike: Global Offensive"
+    },
+    {
+        "Id": "99",
+        "Name": "DOTA",
+        "Description": "Defence Of The Ancients",
+        "Parent": "Defence Of The Ancients"
+    },
+    {
+        "Id": "100",
+        "Name": "LOL",
+        "Description": "League Of Legends",
+        "Parent": "League Of Legends"
+    },
+    {
+        "Id": "101",
+        "Name": "Price boost",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "102",
+        "Name": "Bowling",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "103",
+        "Name": "Hearthstone",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "104",
+        "Name": "Heroes Of The Storm",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "105",
+        "Name": "King Of Glory",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "106",
+        "Name": "NBA2k",
+        "Description": "Basketball simulation video games - National Basketball Association published by 2k Sports (American video game publisher).",
+        "Parent": "Basketball simulation video games - National Basketball Association published by 2k Sports (American video game publisher)."
+    },
+    {
+        "Id": "107",
+        "Name": "Overwatch",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "108",
+        "Name": "Rocket League",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "109",
+        "Name": "Starcraft Broodwar",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "110",
+        "Name": "Starcraft 2",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "111",
+        "Name": "New Sign-up 1st Bet Boost",
+        "Description": "Custom odds added by the Client.",
+        "Parent": "Custom odds added by the Client."
+    },
+    {
+        "Id": "112",
+        "Name": "Rainbow Six",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "113",
+        "Name": "Test",
+        "Description": "",
+        "Parent": ""
+    },
+    {
+        "Id": "115",
+        "Name": "Artifact",
+        "Description": "",
+        "Parent": ""
+    }
+]

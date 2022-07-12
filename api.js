@@ -29,8 +29,8 @@ const corsOptions = {
     credentials: true,
 }
 app.use(cors(corsOptions))
-// const http = require("http");
 
+// const http = require("http");
 // const server = http.createServer(app);
 server.listen(PORT, () => console.log('server On ' + PORT));
 
@@ -83,4 +83,30 @@ app.get("/getMatches", async function (req, res) {
     }
 
     res.json(resp)
+})
+
+
+app.get('/sports', (req, res) => {
+    let rawdata = fs.readFileSync('./Components/Helpers/Sports.json');
+    let file = JSON.parse(rawdata);
+    res.json(file)
+})
+
+
+app.get('/BettingTypes', (req, res) => {
+    let rawdata = fs.readFileSync('./Components/Helpers/BettingTypes.json');
+    let file = JSON.parse(rawdata);
+    res.json(file)
+})
+
+app.get('/EventPart', (req, res) => {
+    let rawdata = fs.readFileSync('./Components/Helpers/EventPart.json');
+    let file = JSON.parse(rawdata);
+    res.json(file)
+})
+
+app.get('/OutcomeTypes', (req, res) => {
+    let rawdata = fs.readFileSync('./Components/Helpers/OutcomeTypes.json');
+    let file = JSON.parse(rawdata);
+    res.json(file)
 })
