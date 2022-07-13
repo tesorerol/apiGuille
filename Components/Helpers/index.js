@@ -25,7 +25,7 @@ exports.getUpdateRows = async function () {
                         await AddData({ ...r, timeEST: FormatFecha(r.startTime) }).then(r => console.log("add ", r)).catch(e => console.log(e, "error"));
                     }
                 })
-                console.log("listo")
+                // console.log("listo")
                 resolve(true);
             });
         }).catch(async r => {
