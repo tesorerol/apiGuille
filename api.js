@@ -10,8 +10,8 @@ const https = require("https");
 const cors = require("cors");
 const PORT = 3003;
 var options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/api.tesotein.com/cert.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/api.omapiendpoint.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/api.omapiendpoint.com/cert.pem'),
 };
 
 const server = https.createServer(options, app);
