@@ -20,7 +20,7 @@ exports.getUpdateRows = async function () {
                     if (exist.length > 0) {
                         await UpdateData({ ...r, _id: exist._id, timeEST: FormatFecha(r.startTime) });
                     } else {
-                        await AddData({ ...r, timeEST: FormatFecha(r.startTime) });
+                        await AddData({ ...r, timeEST: FormatFecha(r.startTime) }).then(r => console.log("add ", r)).catch(e => console.log(e, "error"));
                     }
                 })
                 console.log("listo")
