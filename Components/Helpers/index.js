@@ -17,7 +17,7 @@ exports.getUpdateRows = async function () {
                 response.data.map(async (r) => {
                     let exist = await AllData({ idAsString: r.idAsString });
                     if (exist.length > 0) {
-                        await UpdateData({ ...r, _id: exist._id, timeEST: FormatFecha(r.startTime) });
+                        await UpdateData({ ...r, _id: exist._id, timeEST: FormatFecha(r.startTime) }).then(r => console.log("update ", r)).catch(e => console.log(e, "error"));
                     } else {
                         await AddData({ ...r, timeEST: FormatFecha(r.startTime) }).then(r => console.log("add ", r)).catch(e => console.log(e, "error"));
                     }
